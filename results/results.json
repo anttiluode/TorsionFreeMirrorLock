@@ -1,0 +1,260 @@
+{
+  "graph": {
+    "ports": 4,
+    "interior": 10,
+    "edges": 64,
+    "edge_kinds": {
+      "boundary": 6,
+      "port-interior": 20,
+      "bulk": 38
+    },
+    "bulk_density": 0.8,
+    "gamma": 0.2,
+    "seed": 0
+  },
+  "E1_counting": [
+    {
+      "bulk_density": 1.0,
+      "edges": 71,
+      "hidden_weights": 65,
+      "port_rank": 49,
+      "fiber_dimension": 16,
+      "smallest_kept_singular_value": 1.0292907095758844e-07,
+      "largest_dropped_singular_value": 3.4187977890368642e-15
+    },
+    {
+      "bulk_density": 0.9,
+      "edges": 68,
+      "hidden_weights": 62,
+      "port_rank": 49,
+      "fiber_dimension": 13,
+      "smallest_kept_singular_value": 1.5796419746033691e-07,
+      "largest_dropped_singular_value": 3.096097484422236e-15
+    },
+    {
+      "bulk_density": 0.8,
+      "edges": 64,
+      "hidden_weights": 58,
+      "port_rank": 49,
+      "fiber_dimension": 9,
+      "smallest_kept_singular_value": 2.1243425841932167e-06,
+      "largest_dropped_singular_value": 3.19380044020469e-15
+    },
+    {
+      "bulk_density": 0.7,
+      "edges": 61,
+      "hidden_weights": 55,
+      "port_rank": 49,
+      "fiber_dimension": 6,
+      "smallest_kept_singular_value": 4.648715058452441e-06,
+      "largest_dropped_singular_value": 3.340981545586746e-15
+    },
+    {
+      "bulk_density": 0.6,
+      "edges": 54,
+      "hidden_weights": 48,
+      "port_rank": 48,
+      "fiber_dimension": 0,
+      "smallest_kept_singular_value": 9.876649802420655e-05,
+      "largest_dropped_singular_value": null
+    }
+  ],
+  "E2_pair": {
+    "largest_weight_change": 0.3260290592898757,
+    "smallest_weight": 0.4273671062705748,
+    "port_difference_held_out": 3.3741462984769023e-13,
+    "clamped_key_difference": 0.16558502323214414,
+    "weight_multiset_difference": 0.09105091514876085,
+    "full_laplacian_isospectral": 1.822542117224657e-12,
+    "basis_change_T": {
+      "orthogonality_residual": 1.3322676295501878e-15,
+      "T_L_II_T_residual": 9.894307595459395e-13,
+      "T_L_IP_residual": 3.54516416223305e-12,
+      "largest_entry": 0.9989532928969697,
+      "entries_above_0.1": 19,
+      "eigen_angles_over_pi": [
+        0.0,
+        0.0,
+        0.0027,
+        0.0027,
+        0.0332,
+        0.0332,
+        0.0587,
+        0.0587,
+        0.1149,
+        0.1149
+      ]
+    }
+  },
+  "E3_shared_edits": {
+    "single_edge_edit_plus_0.05": {
+      "boundary": [
+        3.407768012072151e-13,
+        3.4121382037471616e-13,
+        3.4877822779699753e-13,
+        3.4631264032949177e-13,
+        3.4172464934152116e-13
+      ],
+      "port-interior": [
+        0.010693248459456286,
+        0.009942291608029192,
+        0.0023897965699481876,
+        0.009323989035387148,
+        0.007393354812215377
+      ],
+      "bulk": [
+        0.007696934618657073,
+        0.00724910921060661,
+        0.008333449289676083,
+        0.0019054371293193812,
+        0.005757383317486769
+      ]
+    },
+    "global_scale_x1.05": 2.7836950325501243e-13,
+    "edits_preserving_all_partners_dim_vs_partners": [
+      20,
+      6,
+      6,
+      6
+    ],
+    "boundary_share_of_that_space": 1.0000000000000002,
+    "boundary_edges": 6
+  },
+  "E4_public_plasticity": {
+    "boundary only / additive": {
+      "1": {
+        "port_difference": 3.594232539991532e-13,
+        "key_difference": 0.16558502323214414
+      },
+      "10": {
+        "port_difference": 5.903067829108691e-13,
+        "key_difference": 0.16558502323214414
+      },
+      "50": {
+        "port_difference": 4.783967273983895e-13,
+        "key_difference": 0.16558502323214414
+      },
+      "300": {
+        "port_difference": 6.13835893204064e-14,
+        "key_difference": 0.16558502323214414
+      }
+    },
+    "boundary only / multiplicative": {
+      "1": {
+        "port_difference": 3.612328807483786e-13,
+        "key_difference": 0.16558502323214414
+      },
+      "10": {
+        "port_difference": 5.343265559520226e-13,
+        "key_difference": 0.16558502323214414
+      },
+      "50": {
+        "port_difference": 2.386303349574658e-13,
+        "key_difference": 0.16558502323214414
+      },
+      "300": {
+        "port_difference": 5.023434444269226e-14,
+        "key_difference": 0.16558502323214414
+      }
+    },
+    "boundary + port-interior / additive": {
+      "1": {
+        "port_difference": 0.004482325789481221,
+        "key_difference": 0.16557456896334505
+      },
+      "10": {
+        "port_difference": 0.04208943121219306,
+        "key_difference": 0.16330033238243394
+      },
+      "50": {
+        "port_difference": 0.05782229221103918,
+        "key_difference": 0.1011354614705299
+      },
+      "300": {
+        "port_difference": 0.001353187899971908,
+        "key_difference": 0.02296830834503878
+      }
+    },
+    "boundary + port-interior / multiplicative": {
+      "1": {
+        "port_difference": 0.0030442085333423474,
+        "key_difference": 0.16551684256121266
+      },
+      "10": {
+        "port_difference": 0.035321877367843216,
+        "key_difference": 0.16580007238007163
+      },
+      "50": {
+        "port_difference": 0.06966112109391052,
+        "key_difference": 0.0902714317753774
+      },
+      "300": {
+        "port_difference": 0.0003184648435450017,
+        "key_difference": 0.015773427805437185
+      }
+    },
+    "everything / additive": {
+      "1": {
+        "port_difference": 0.0050795774511091735,
+        "key_difference": 0.1649481526538594
+      },
+      "10": {
+        "port_difference": 0.060999446747984055,
+        "key_difference": 0.1573080635600279
+      },
+      "50": {
+        "port_difference": 0.048017542851379616,
+        "key_difference": 0.021601608877684503
+      },
+      "300": {
+        "port_difference": 9.960550760605917e-05,
+        "key_difference": 0.007991608537389427
+      }
+    },
+    "everything / multiplicative": {
+      "1": {
+        "port_difference": 0.0032474899335858004,
+        "key_difference": 0.16519314767073828
+      },
+      "10": {
+        "port_difference": 0.048083992531920174,
+        "key_difference": 0.16702302927801888
+      },
+      "50": {
+        "port_difference": 0.005150515404251793,
+        "key_difference": 0.05613090186156906
+      },
+      "300": {
+        "port_difference": 0.00014568897557234865,
+        "key_difference": 0.023121318331780473
+      }
+    }
+  },
+  "E5_words": {
+    "bits": 6,
+    "words": 64,
+    "walk_distance": 0.8,
+    "max_port_difference_across_words": 3.3226381458922298e-12,
+    "min_pairwise_key_difference": 0.06905281774719829,
+    "key_decode_accuracy_vs_noise": {
+      "0.0": 1.0,
+      "0.1": 1.0,
+      "0.3": 1.0,
+      "1.0": 0.999609375,
+      "3.0": 0.76328125
+    },
+    "after 300 boundary-only public writes": {
+      "max_port_difference_across_words": 2.64603490913526e-13,
+      "key_decode_with_original_templates_noise_0.01": 1.0
+    },
+    "after 50 public writes reaching the bulk": {
+      "max_port_difference_across_words": 0.14565383117542183,
+      "key_decode_with_original_templates_noise_0.01": 0.029296875
+    }
+  },
+  "E6_local_key_write_port_change": {
+    "4": 0.19658925939645258,
+    "5": 0.14832953356315412,
+    "6": 0.14501911817965948
+  }
+}
