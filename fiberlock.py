@@ -148,7 +148,8 @@ def strain_write(g, m, drive, freq, scope, rate=0.06, mode="additive"):
         a, c = g.edges[k]
         E = 0.48*np.tanh(abs(A[a] - A[c])**2/0.25)
         m[k] = m[k] + rate*E if mode == "additive" else m[k]*(1 + rate*E)
-    return np.clip(m, 0.02, 10.0)
+    m[allowed] = np.clip(m[allowed], 0.02, 10.0)      # only the edges this rule writes
+    return m
 
 
 def public_history(g, rng, steps):

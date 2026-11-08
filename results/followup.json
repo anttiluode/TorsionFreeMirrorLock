@@ -1,0 +1,287 @@
+{
+  "codebook": {
+    "words": 64,
+    "min_weight": 0.23071185884995746
+  },
+  "F1_erasure_vs_miscalibration": {
+    "everything": {
+      "0": {
+        "public_leak_max": 1.0809661554324821e-11,
+        "fixed_templates_noise_0.01": 1.0,
+        "recalibrated_noise_0.01": 1.0,
+        "recalibrated_noise_0.1": 1.0,
+        "min_pairwise_key_separation": 0.07492087255322258,
+        "edges_at_clip": 0,
+        "mean_weight": 1.022416763307923
+      },
+      "10": {
+        "public_leak_max": 0.08831416392604229,
+        "fixed_templates_noise_0.01": 0.796875,
+        "recalibrated_noise_0.01": 1.0,
+        "recalibrated_noise_0.1": 1.0,
+        "min_pairwise_key_separation": 0.05362144735164258,
+        "edges_at_clip": 0,
+        "mean_weight": 1.1162762075312018
+      },
+      "50": {
+        "public_leak_max": 0.1668448756916049,
+        "fixed_templates_noise_0.01": 0.015625,
+        "recalibrated_noise_0.01": 1.0,
+        "recalibrated_noise_0.1": 0.993359375,
+        "min_pairwise_key_separation": 0.009120809414826828,
+        "edges_at_clip": 0,
+        "mean_weight": 1.5516086162556384
+      },
+      "100": {
+        "public_leak_max": 0.0011074985914435412,
+        "fixed_templates_noise_0.01": 0.01953125,
+        "recalibrated_noise_0.01": 1.0,
+        "recalibrated_noise_0.1": 0.719140625,
+        "min_pairwise_key_separation": 0.004813263211281721,
+        "edges_at_clip": 0,
+        "mean_weight": 2.072771877028177
+      },
+      "300": {
+        "public_leak_max": 0.00014382203739918015,
+        "fixed_templates_noise_0.01": 0.021875,
+        "recalibrated_noise_0.01": 0.96484375,
+        "recalibrated_noise_0.1": 0.045703125,
+        "min_pairwise_key_separation": 0.003818418835016861,
+        "edges_at_clip": 0,
+        "mean_weight": 3.8511936790942696
+      },
+      "1000": {
+        "public_leak_max": 2.6739692857780842e-05,
+        "fixed_templates_noise_0.01": 0.022265625,
+        "recalibrated_noise_0.01": 0.18125,
+        "recalibrated_noise_0.1": 0.021875,
+        "min_pairwise_key_separation": 0.002856678337950081,
+        "edges_at_clip": 1664,
+        "mean_weight": 6.4797695781856985
+      }
+    },
+    "boundary + port-interior": {
+      "0": {
+        "public_leak_max": 1.0809661554324821e-11,
+        "fixed_templates_noise_0.01": 1.0,
+        "recalibrated_noise_0.01": 1.0,
+        "recalibrated_noise_0.1": 1.0,
+        "min_pairwise_key_separation": 0.07492087255322258,
+        "edges_at_clip": 0,
+        "mean_weight": 1.022416763307923
+      },
+      "10": {
+        "public_leak_max": 0.07692942051815548,
+        "fixed_templates_noise_0.01": 1.0,
+        "recalibrated_noise_0.01": 1.0,
+        "recalibrated_noise_0.1": 1.0,
+        "min_pairwise_key_separation": 0.07037412031552319,
+        "edges_at_clip": 0,
+        "mean_weight": 1.0933721225227648
+      },
+      "50": {
+        "public_leak_max": 0.29700199150681544,
+        "fixed_templates_noise_0.01": 0.0,
+        "recalibrated_noise_0.01": 1.0,
+        "recalibrated_noise_0.1": 1.0,
+        "min_pairwise_key_separation": 0.027207271694635306,
+        "edges_at_clip": 0,
+        "mean_weight": 1.3940974214974264
+      },
+      "100": {
+        "public_leak_max": 0.2618262187203204,
+        "fixed_templates_noise_0.01": 0.029296875,
+        "recalibrated_noise_0.01": 1.0,
+        "recalibrated_noise_0.1": 1.0,
+        "min_pairwise_key_separation": 0.012864002179004371,
+        "edges_at_clip": 0,
+        "mean_weight": 1.7679592429071127
+      },
+      "300": {
+        "public_leak_max": 0.005946223256429098,
+        "fixed_templates_noise_0.01": 0.015625,
+        "recalibrated_noise_0.01": 1.0,
+        "recalibrated_noise_0.1": 0.3765625,
+        "min_pairwise_key_separation": 0.012001490765561342,
+        "edges_at_clip": 0,
+        "mean_weight": 3.062906998874719
+      },
+      "1000": {
+        "public_leak_max": 0.0014350547064668584,
+        "fixed_templates_noise_0.01": 0.0171875,
+        "recalibrated_noise_0.01": 0.99921875,
+        "recalibrated_noise_0.1": 0.095703125,
+        "min_pairwise_key_separation": 0.009752013189156248,
+        "edges_at_clip": 1664,
+        "mean_weight": 4.671527882406918
+      }
+    }
+  },
+  "F2_safe_plasticity": {
+    "scale_by_1.3_port_difference": {
+      "all edges": 2.1221992107049133e-15,
+      "hidden edges (port-interior + bulk)": 4.173461309690662e-15,
+      "bulk only": 0.011534353340483507,
+      "port-interior only": 0.0459014200929566
+    },
+    "plastic_system": {
+      "steps": 500,
+      "final_hidden_gain": 0.7471598049030042,
+      "hidden_gain_range_over_history": [
+        0.6518388004593465,
+        1.0306757065255554
+      ],
+      "boundary_weight_range": [
+        7.499788436268417,
+        8.391411094851307
+      ],
+      "public_leak_max": 1.088012035152198e-11,
+      "fixed_raw_templates_noise_0.01": 0.0,
+      "scale_invariant_reader_noise_0.01": 1.0,
+      "scale_invariant_reader_noise_0.1": 0.540234375,
+      "scale_invariant_reading_change": 1.8041124150158794e-16
+    }
+  },
+  "F3_compact_readers": {
+    "one_frequency_L_II_recovery_error": 5.357904569797635e-15,
+    "single_node_reader": {
+      "node 4, 1 freq (2 real numbers)": {
+        "noise_0": 1.0,
+        "noise_0.01": 0.040625,
+        "noise_0.03": 0.023828125,
+        "noise_0.1": 0.017578125,
+        "min_separation": 1.0753004385640273e-05
+      },
+      "node 4, 2 freq (4 real numbers)": {
+        "noise_0": 1.0,
+        "noise_0.01": 0.7109375,
+        "noise_0.03": 0.259765625,
+        "noise_0.1": 0.064453125,
+        "min_separation": 0.0010452263014582935
+      },
+      "node 4, 3 freq (6 real numbers)": {
+        "noise_0": 1.0,
+        "noise_0.01": 0.778515625,
+        "noise_0.03": 0.335546875,
+        "noise_0.1": 0.08203125,
+        "min_separation": 0.0017459959359710823
+      },
+      "node 4, 5 freq (10 real numbers)": {
+        "noise_0": 1.0,
+        "noise_0.01": 0.892578125,
+        "noise_0.03": 0.440625,
+        "noise_0.1": 0.10703125,
+        "min_separation": 0.0031699978035924234
+      },
+      "node 4, 10 freq (20 real numbers)": {
+        "noise_0": 1.0,
+        "noise_0.01": 0.97109375,
+        "noise_0.03": 0.673046875,
+        "noise_0.1": 0.169921875,
+        "min_separation": 0.0029303230500687936
+      },
+      "node 5, 1 freq (2 real numbers)": {
+        "noise_0": 1.0,
+        "noise_0.01": 0.078515625,
+        "noise_0.03": 0.040234375,
+        "noise_0.1": 0.0234375,
+        "min_separation": 3.2890094009834265e-05
+      },
+      "node 5, 2 freq (4 real numbers)": {
+        "noise_0": 1.0,
+        "noise_0.01": 0.884765625,
+        "noise_0.03": 0.4734375,
+        "noise_0.1": 0.13359375,
+        "min_separation": 0.003287392387068307
+      },
+      "node 5, 3 freq (6 real numbers)": {
+        "noise_0": 1.0,
+        "noise_0.01": 0.933203125,
+        "noise_0.03": 0.55625,
+        "noise_0.1": 0.153125,
+        "min_separation": 0.003803476084898061
+      },
+      "node 5, 5 freq (10 real numbers)": {
+        "noise_0": 1.0,
+        "noise_0.01": 0.97734375,
+        "noise_0.03": 0.700390625,
+        "noise_0.1": 0.221484375,
+        "min_separation": 0.006072486622653145
+      },
+      "node 5, 10 freq (20 real numbers)": {
+        "noise_0": 1.0,
+        "noise_0.01": 0.9984375,
+        "noise_0.03": 0.87734375,
+        "noise_0.1": 0.353125,
+        "min_separation": 0.007999050239352637
+      },
+      "node 6, 1 freq (2 real numbers)": {
+        "noise_0": 1.0,
+        "noise_0.01": 0.053515625,
+        "noise_0.03": 0.029296875,
+        "noise_0.1": 0.01953125,
+        "min_separation": 0.00015307257761365642
+      },
+      "node 6, 2 freq (4 real numbers)": {
+        "noise_0": 1.0,
+        "noise_0.01": 0.936328125,
+        "noise_0.03": 0.63359375,
+        "noise_0.1": 0.1875,
+        "min_separation": 0.0020524059229185937
+      },
+      "node 6, 3 freq (6 real numbers)": {
+        "noise_0": 1.0,
+        "noise_0.01": 0.95625,
+        "noise_0.03": 0.687890625,
+        "noise_0.1": 0.23515625,
+        "min_separation": 0.003943688699980306
+      },
+      "node 6, 5 freq (10 real numbers)": {
+        "noise_0": 1.0,
+        "noise_0.01": 0.975,
+        "noise_0.03": 0.73515625,
+        "noise_0.1": 0.2515625,
+        "min_separation": 0.005756821551700123
+      },
+      "node 6, 10 freq (20 real numbers)": {
+        "noise_0": 1.0,
+        "noise_0.01": 0.979296875,
+        "noise_0.03": 0.701171875,
+        "noise_0.1": 0.21640625,
+        "min_separation": 0.004550563460995785
+      }
+    }
+  },
+  "F4_powers_of_T": {
+    "1": {
+      "largest_entry_on_absent_edges": 1.9302003619956745e-12,
+      "largest_positive_offdiagonal": 1.9302003619956745e-12,
+      "is_a_valid_weighting_of_the_graph": true
+    },
+    "2": {
+      "largest_entry_on_absent_edges": 0.03615059287261191,
+      "largest_positive_offdiagonal": 0.00808266132295857,
+      "is_a_valid_weighting_of_the_graph": false
+    },
+    "3": {
+      "largest_entry_on_absent_edges": 0.10908956623337959,
+      "largest_positive_offdiagonal": 0.02412762620212325,
+      "is_a_valid_weighting_of_the_graph": false
+    },
+    "4": {
+      "largest_entry_on_absent_edges": 0.21650457723380795,
+      "largest_positive_offdiagonal": 0.04769989408767004,
+      "is_a_valid_weighting_of_the_graph": false
+    },
+    "5": {
+      "largest_entry_on_absent_edges": 0.35315608176273566,
+      "largest_positive_offdiagonal": 0.07804564550475501,
+      "is_a_valid_weighting_of_the_graph": false
+    }
+  },
+  "F5_state_observability": {
+    "modes": 14,
+    "smallest_port_norm_of_an_eigenvector": 0.2557264476447466,
+    "smallest_eigenvalue_gap": 0.14013448446727672
+  }
+}

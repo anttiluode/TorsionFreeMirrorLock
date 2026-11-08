@@ -74,5 +74,23 @@ class FiberLockTests(unittest.TestCase):
         self.assertGreater(rel(g.port_map(c, HELD), g.port_map(d, HELD)), 1e-3)
 
 
+    def test_common_hidden_gain_is_safe_and_partial_gain_leaks(self):
+        """Scaling every hidden edge keeps partners equivalent; scaling only the bulk does not.
+
+        A scale-invariant key (L_II from one frequency, normalized by its trace) is unchanged.
+        """
+        g = self.g
+        hidden = g.kind != "boundary"
+        s = np.where(hidden, 1.3, 1.0)
+        self.assertLess(rel(g.port_map(self.m0*s, HELD), g.port_map(self.m1*s, HELD)), 1e-9)
+        b = np.where(g.kind == "bulk", 1.3, 1.0)
+        self.assertGreater(rel(g.port_map(self.m0*b, HELD), g.port_map(self.m1*b, HELD)), 1e-3)
+        import followup
+        np.testing.assert_allclose(followup.normalized_lii(g, self.m1*s), followup.normalized_lii(g, self.m1),
+                                   atol=1e-12)
+        Lr, Lii = followup.lii_from_one_frequency(g, self.m1)
+        np.testing.assert_allclose(Lr, Lii, atol=1e-11)
+
+
 if __name__ == "__main__":
     unittest.main()
